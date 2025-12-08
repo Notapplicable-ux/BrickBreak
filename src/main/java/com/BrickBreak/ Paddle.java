@@ -16,6 +16,19 @@ public class Paddle {
 	//constructor(s):
 	
 	//methods:
-	
-	
+	public int getX(){
+		
+	}
+	public int getY(){
+		
+	}
+	public int getWidth(){
+		
+	}
+	public int getHeight(){
+		
+	}
+	public int getVelocity(){
+		
+	}
 }
