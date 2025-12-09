@@ -1,3 +1,6 @@
+//Name: Anand Raj
+//Description of class
+
 package com.BrickBreak;
 import java.awt.*;
 import java.awt.Color;
@@ -24,13 +27,34 @@ public class Ball {
 	//constructor(s):
 
 	//methods:
+	public void moveBall(){
+		x += changeX;
+		y += changeY;
+	}
+	
+	public void draw(Graphics g){
+		g.setColor(Color.cyan);
+		g.fillOval(x, y, size, size);
+	}
 	public int getXpos(){
-		
+		return x;
 	}
 	public int getYpos(){
-
+		return y;
 	}
 	public int getSize(){
-		
+		return size;
+	}
+	public double getChangeX(){
+		return changeX;
+	}
+	public double getChangeY(){
+		return changeY;
+	}
+	public void setChangeX(){
+		this.changeX = changeX;
+	}
+	public void setChangeY(){
+		this.changeY = changeY;
 	}
 }
