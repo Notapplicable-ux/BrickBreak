@@ -27,11 +27,15 @@ public class Paddle {
 		this.color = color;
 	}
 	//methods:
+	public void draw(Graphics g) {
+		g.setColor(Color.RED);
+		g.fillRect(x, y, width, height);
+	}
 	public int getX(){
-		
+		return x;
 	}
 	public int getY(){
-		
+		return y;
 	}
 	public int getWidth(){
 		
@@ -40,6 +44,12 @@ public class Paddle {
 		
 	}
 	public int getVelocity(){
+		
+	}
+	public void move() {
+		
+	}
+	public void addVelocity() {
 		
 	}
 }

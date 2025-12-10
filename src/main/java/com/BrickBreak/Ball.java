@@ -31,7 +31,12 @@ public class Ball {
 		x += changeX;
 		y += changeY;
 	}
-	
+	public void setX(){
+		this.x = x;
+	}
+	public void setY(){
+		this.y = y;
+	}
 	public void draw(Graphics g){
 		g.setColor(Color.cyan);
 		g.fillOval(x, y, size, size);
@@ -56,5 +61,11 @@ public class Ball {
 	}
 	public void setChangeY(){
 		this.changeY = changeY;
+	}
+	public void setXVelocity() {
+		
+	}
+	public void setYVelocity() {
+		
 	}
 }
