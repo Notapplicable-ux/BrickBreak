@@ -56,16 +56,10 @@ public class Ball {
 	public double getChangeY(){
 		return changeY;
 	}
-	public void setChangeX(){
+	public void setXVelocity(int changeX) {
 		this.changeX = changeX;
 	}
-	public void setChangeY(){
+	public void setYVelocity(int changeY) {
 		this.changeY = changeY;
-	}
-	public void setXVelocity() {
-		
-	}
-	public void setYVelocity() {
-		
 	}
 }
