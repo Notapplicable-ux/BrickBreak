@@ -19,12 +19,12 @@ public class Paddle{
 	
 	
 	//constructor(s):
-	public Paddle (int x, int y, int width, int speed){
+	public Paddle (int x, int y, int width, int height){
 		this.x = x;
 		this.y = y;
 		this.width = width;
-		this.speed = speed;
-		this.color = color;
+		this.height = height;
+		this.speed = 2;
 	}
 	//methods:
 	public void draw(Graphics g) {
@@ -50,7 +50,7 @@ public class Paddle{
 		return speed;
 	}
 	public void move() {
-		addVelocity(6);
+		x += speed;
 	}
 	public void addVelocity(int num) {
 		speed += num;

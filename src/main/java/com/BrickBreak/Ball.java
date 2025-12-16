@@ -19,6 +19,8 @@ public class Ball {
 		this.x = x;
 		this.y = y;
 		this.size = size;
+		this.changeX = 3;
+		this.changeY = -1;
 	}
 	
 	
@@ -61,9 +63,9 @@ public class Ball {
 		this.changeY = changeY;
 	}
 	public void reverseX() {
-		changeX *= 1;
+		changeX *= -1;
 	}
 	public void reverseY() {
-		changeY *= 1;
+		changeY *= -1;
 	}
 }
