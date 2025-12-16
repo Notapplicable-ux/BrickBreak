@@ -3,13 +3,13 @@ package com.BrickBreak;
 import java.awt.Graphics;
 import java.awt.*;
 
-public class Paddle {
+public class Paddle{
 
 
 	//your code here!
 	private int x;
 	private int y;
-	private int height;
+	private int height = 15;
 	private int width;
 	private int speed;
 	private Color color;
@@ -46,10 +46,16 @@ public class Paddle {
 	public int getVelocity(){
 		return speed;
 	}
-	public void move() {
+	public void move(KeyEvent e) {
+	if(e.getKeyCode == KeyEvent.VK)	{
 		
+		}
+
 	}
-	public void addVelocity() {
-		
+	public void addVelocity(int num) {
+		speed += num;
+	}
+	public void setVelocity(int speed) {
+		this.speed = speed;
 	}
 }
