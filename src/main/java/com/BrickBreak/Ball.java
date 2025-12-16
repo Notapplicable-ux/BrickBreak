@@ -1,5 +1,6 @@
 //Name: Anand Raj
 //Description of class
+// Making a ball hat move in the brick breaker app
 
 package com.BrickBreak;
 import java.awt.*;
@@ -14,12 +15,9 @@ public class Ball {
 	private int size;
 	private Color color;
 	//don't forget you need instance variables:
-	public Ball (int x, int y, int changeX, int changeY, Color color, int size){
+	public Ball (int x, int y, int size){
 		this.x = x;
 		this.y = y;
-		this.changeX = changeX;
-		this.changeY = changeY;
-		this.color = color;
 		this.size = size;
 	}
 	
@@ -27,14 +25,14 @@ public class Ball {
 	//constructor(s):
 
 	//methods:
-	public void moveBall(){
+	public void move(){
 		x += changeX;
 		y += changeY;
 	}
-	public void setX(){
+	public void setX(int x){
 		this.x = x;
 	}
-	public void setY(){
+	public void setY(int y){
 		this.y = y;
 	}
 	public void draw(Graphics g){
@@ -61,5 +59,11 @@ public class Ball {
 	}
 	public void setYVelocity(int changeY) {
 		this.changeY = changeY;
+	}
+	public void reverseX() {
+		changeX *= 1;
+	}
+	public void reverseY() {
+		changeY *= 1;
 	}
 }

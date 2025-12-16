@@ -19,7 +19,7 @@ public class Paddle{
 	
 	
 	//constructor(s):
-	public Paddle (int x, int y, int width, int speed, Color color){
+	public Paddle (int x, int y, int width, int speed){
 		this.x = x;
 		this.y = y;
 		this.width = width;
@@ -36,6 +36,9 @@ public class Paddle{
 	}
 	public int getY(){
 		return y;
+	}
+	public void setX(int x){
+		this.x = x;
 	}
 	public int getWidth(){
 		return width;

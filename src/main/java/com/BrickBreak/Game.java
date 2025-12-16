@@ -5,10 +5,10 @@
  * Take a look at BrickBreak.java for all the exciting stuff!
  */
 package com.BrickBreak;
-import java.awt.*;
-import java.awt.event.*;
+//import java.awt.*;
+//import java.awt.event.*;
 import javax.swing.*;
-import java.io.IOException;
+//import java.io.IOException;
 
 public class Game  {
 	public static void main(String[] args) {
